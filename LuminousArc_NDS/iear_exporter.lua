@@ -73,7 +73,7 @@ function ReadToC( filehandle, toclen )
   end
   
   --Skip the zeroes
-  filehandle:seek( "cur", (16 - 4) )
+  filehandle:seek( "cur", 12 )
 
   --Iterate table
   local cntentries = 1
